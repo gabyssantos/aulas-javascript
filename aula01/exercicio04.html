@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../favicon.jpg">
+    <title>AULA 03 - JAVASCRIPT</title>
+    <meta name="description" content="Coneúdo das aulas de JS">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Gabrielly">
+</head>
+
+<body>
+    <h1>Integrando os recursos de interatividade do JS</h1>
+    <hr>
+    <script>
+        window.alert("Seja bom vindo ao site.");
+        let nome = window.prompt("Qual sua nome? ")
+        window.alert(nome);
+        console.log(nome);
+        let resposta = window.confirm("Você deseja sair da página? ");
+        console.log(resposta);
+        document.write("Seja Bem-Vindo(a) " + nome);
+
+        if(resposta == true){
+            setTimeout(() => {
+                window.open("index.html");
+            }, 3000); //3000 milissengundos = 3 segundos
+        }else{
+            window.confirm(nome +", você vai continuar nessa página!")
+        }
+    </script>
+
+</body>
+
+</html>

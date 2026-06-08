@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../favicon.jpg">
+    <title>DESAFIO 2 - JAVASCRIPT</title>
+    <meta name="description" content="Coneúdo das aulas de JS">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Gabrielly">
+</head>
+
+<body>
+    <h1>Solicitando operações matemáticas</h1>
+    <h2 id="num1"></h2>
+    <h2 id="operacao"></h2>
+    <h2 id="num2"></h2>
+    <h2 id="resultado"></h2>
+    <hr>
+    <script>
+        let num1 = parseFloat(window.prompt("Digite o 1º número: "));
+        let num2 = parseFloat(window.prompt("Digite o 2º número: "));
+        let operacao = window.prompt("Qual operação quer realizar? + ou -")
+        let resultado = 0
+
+        if(operacao == "+"){
+            resultado = num1 + num2
+        }else{
+            resultado = num1 - num2
+        }
+        document.getElementById("num1").innerText = num1;
+        document.getElementById("operacao").innerText = operacao;
+        document.getElementById("num2").innerText = num2;
+        document.getElementById("resultado").innerText = resultado;
+
+    </script>
+</body>
+
+</html>
