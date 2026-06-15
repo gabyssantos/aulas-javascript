@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../favicon.jpg">
+    <title>DESAFIO 02 - JAVASCRIPT</title>
+    <meta name="description" content="Coneúdo das aulas de JS">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Gabrielly">
+</head>
+
+<body>
+    <h1>MANIPULANDO IMAGENS DO HTML ATRAVÉS DO JS</h1>
+    <hr>
+    <div>
+        <img width="50%" src="/img/dinheiro.jpg" alt="DINHEIRO">
+    </div>
+
+    <script>
+        const tags_img = document.getElementsByTagName('img');
+        console.log(tags_img);
+        let tags_img_2 = tags_img[0];
+        tags_img_2.src = "/img/iphone16.jpg"
+
+
+    </script>
+</body>
+
+</html>
