@@ -15,7 +15,7 @@
     <h1>MANIPULANDO IMAGENS DO HTML ATRAVÉS DO JS</h1>
     <hr>
     <div>
-        <img width="50%" src="/img/coraline2.jpg" alt="DINHEIRO">
+        <img width="50%" src="/img/iphone.jpg" alt="DINHEIRO">
         <button onclick="trocarimagem()">Trocar Imagem</button>
     </div>
 
@@ -24,12 +24,12 @@
             const tags_img = document.getElementsByTagName('img');
             console.log(tags_img);
             let tags_img_2 = tags_img[0];
-            if (tags_img_2.title == "coraline1") {
-                tags_img_2.src = "/img/coraline2.jpg"
-                tags_img_2.title = "coraline2"
+            if (tags_img_2.title == "dinheiro") {
+                tags_img_2.src = "/img/iphone.jpg"
+                tags_img_2.title = "iphone"
             } else {
-                tags_img_2.src = "/img/coraline1.jpg"
-                tags_img_2.title = "coraline1"
+                tags_img_2.src = "/img/dinheiro.jpg"
+                tags_img_2.title = "dinheiro"
             }
         }
 

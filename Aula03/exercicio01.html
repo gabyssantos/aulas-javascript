@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="../favicon.jpg">
-    <title>DESAFIO 03 - JAVASCRIPT</title>
+    <title>EXERCICIO 01 - JAVASCRIPT</title>
     <meta name="description" content="Coneúdo das aulas de JS">
     <meta name="keywords" content="sites, web, frontend">
     <meta name="author" content="Gabrielly">
@@ -16,16 +16,29 @@
     <hr>
     <div>
         <img width="50%" src="/img/iphone.jpg" alt="DINHEIRO">
-        <button onclick="trocarimagem()">Trocar Imagem</button>
+        <button onclick="trocarimagem1()">IPHONE</button>
+         <button onclick="trocarimagem2()">DINHEIRO</button>
     </div>
 
     <script>
-        function trocarimagem() {
-            const tags_img = document.getElementsByTagName('img');
-            console.log(tags_img);
-            let tags_img_2 = tags_img[0];
-            tags_img_2.src = "/img/dinheiro.jpg"
+    function trocarimagem1() {
+        const tags_img = document.getElementsByTagName('img');
+        console.log(tags_img);
+        let tags_img_2 = tags_img[0];
+
+            tags_img_2.src = "/img/iphone.jpg"
+            tags_img_2.title = "iphone"
         }
+
+        function trocarimagem2() {
+        const tags_img = document.getElementsByTagName('img');
+        console.log(tags_img);
+        let tags_img_2 = tags_img[0];
+        
+            tags_img_2.src = "/img/dinheiro.jpg"
+            tags_img_2.title = "dinheiro"
+        }
+
 
 
     </script>
